@@ -29,6 +29,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ArticalManager\forms.py" />
     <Compile Include="ArticalManager\models.py" />
     <Compile Include="ArticalManager\tests.py" />
     <Compile Include="ArticalManager\views.py" />
@@ -50,6 +51,9 @@
     <Folder Include="ArticalManager\" />
     <Folder Include="ArticalManager\Templates\" />
     <Folder Include="Wenyan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArticalManager\Templates\artical.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
