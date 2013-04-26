@@ -9,5 +9,5 @@ class Artical(models.Model):
     index = models.CharField(max_length=200)
 
     def save(self, force_insert = False, force_update = False, using = None, update_fields = None):
-        self.index = self.volume+self.number;
+        self.index = self.volume+str(self.number);
         return super(Artical, self).save(force_insert, force_update, using, update_fields)
