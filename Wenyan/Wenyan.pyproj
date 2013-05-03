@@ -53,7 +53,10 @@
     <Folder Include="Wenyan\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ArticalManager\Templates\artical.html" />
+    <Content Include="ArticalManager\Templates\edit_artical.html" />
+    <Content Include="ArticalManager\Templates\list_artical.html" />
+    <Content Include="ArticalManager\Templates\show_artical.html" />
+    <Content Include="ArticalManager\Templates\home.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>

@@ -6,7 +6,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'Wenyan.views.home', name='home'),
+    url(r'^$', 'ArticalManager.views.goHome', name='home'),
+    #url('r'^&', 'ArticalManager.views.showArtical'),
     # url(r'^Wenyan/', include('Wenyan.Wenyan.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -14,5 +15,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^artical/', 'ArticalManager.views.showArtical'),
+    url(r'^edit_artical/', 'ArticalManager.views.editArtical'),
+    url(r'^list_artical/', 'ArticalManager.views.listArtical'),
+    url(r'^show_artical/(\d+)$', 'ArticalManager.views.showArtical', name='show_artical'),
 )

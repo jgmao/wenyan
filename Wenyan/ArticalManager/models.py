@@ -11,3 +11,9 @@ class Artical(models.Model):
     def save(self, force_insert = False, force_update = False, using = None, update_fields = None):
         self.index = self.volume+str(self.number);
         return super(Artical, self).save(force_insert, force_update, using, update_fields)
+    @models.permalink
+    def get_absolute_url(self):
+        return 'show_artical/%' % (self.id)
+    def __unicode__(self):
+        return self.index
+
